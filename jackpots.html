@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackpots - CipherWins Casino | Progressive & Fixed Jackpots</title>
+    <meta name="description" content="Discover massive jackpots at CipherWins Casino. Play progressive slots and win life-changing prizes from top providers.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Jackpots - CipherWins Casino">
+    <meta property="og:description" content="Win massive progressive and fixed jackpots with our premium slot collection.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cipherwins.org.uk/jackpots">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-purple': '#8B5CF6',
+                        'cyber-violet': '#7C3AED',
+                        'electric-blue': '#06B6D4',
+                        'neon-pink': '#EC4899',
+                        'cyber-dark': '#1E1B4B'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-cyber-dark via-purple-900 to-cyber-violet text-white overflow-x-hidden">
+    
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji">🏍️</div>
+        <div class="floating-emoji">⚡</div>
+        <div class="floating-emoji">🎰</div>
+        <div class="floating-emoji">💎</div>
+        <div class="floating-emoji">🚀</div>
+        <div class="floating-emoji">⭐</div>
+        <div class="floating-emoji">🔥</div>
+        <div class="floating-emoji">💫</div>
+    </div>
+
+    <!-- Header -->
+    <header class="floating-header fixed top-4 left-4 right-4 z-50 bg-black/20 backdrop-blur-lg rounded-2xl border border-purple-500/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="/">
+                        <img alt="Cipherwins casino logo" src="images/logo.png" class="h-16" />
+                    </a>
+                    </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#games" class="nav-link hover:text-electric-blue transition-colors">Casino</a>
+                    <a href="#bonuses" class="nav-link hover:text-electric-blue transition-colors">Promotions</a>
+                    <a href="#banking" class="nav-link hover:text-electric-blue transition-colors">Banking</a>
+                </div>
+                <button class="cta-button" onclick="window.location.href='/register'">
+                    Join Now
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-3d">Jackpot Games</h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Chase life-changing wins with our collection of progressive and fixed jackpot slots. Your fortune awaits!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Jackpots -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-3d">Current Jackpot Prizes</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                <div class="jackpot-card">
+                    <div class="text-center">
+                        <div class="text-sm text-electric-blue font-semibold mb-2">MEGA JACKPOT</div>
+                        <div class="text-4xl md:text-5xl font-bold text-3d mb-2" id="mega-jackpot">£2,847,392</div>
+                        <div class="text-sm text-gray-400">Mega Moolah</div>
+                    </div>
+                </div>
+                <div class="jackpot-card">
+                    <div class="text-center">
+                        <div class="text-sm text-neon-pink font-semibold mb-2">MAJOR JACKPOT</div>
+                        <div class="text-4xl md:text-5xl font-bold text-3d mb-2" id="major-jackpot">£456,789</div>
+                        <div class="text-sm text-gray-400">Divine Fortune</div>
+                    </div>
+                </div>
+                <div class="jackpot-card">
+                    <div class="text-center">
+                        <div class="text-sm text-yellow-400 font-semibold mb-2">MINI JACKPOT</div>
+                        <div class="text-4xl md:text-5xl font-bold text-3d mb-2" id="mini-jackpot">£89,234</div>
+                        <div class="text-sm text-gray-400">Hall of Gods</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Jackpots Work -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-3d">How Slot Jackpots Work</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-electric-blue">Progressive Jackpots</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <p>Progressive jackpots grow with every bet placed across the network. A small percentage of each wager contributes to the jackpot pool, creating massive prizes that can reach millions of pounds.</p>
+                            <div class="bg-black/30 rounded-lg p-4 border border-purple-500/30">
+                                <h4 class="font-bold mb-2 text-white">How They Build:</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li>• Every spin contributes to the jackpot</li>
+                                    <li>• Multiple casinos feed the same pot</li>
+                                    <li>• Jackpot resets after being won</li>
+                                    <li>• Can be triggered randomly or through bonus features</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-pink">Fixed Jackpots</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <p>Fixed jackpots offer predetermined prize amounts that don't change based on player activity. These jackpots provide consistent winning opportunities with clearly defined prize values.</p>
+                            <div class="bg-black/30 rounded-lg p-4 border border-purple-500/30">
+                                <h4 class="font-bold mb-2 text-white">Key Features:</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li>• Set prize amounts that never change</li>
+                                    <li>• Usually triggered by specific symbol combinations</li>
+                                    <li>• More frequent wins than progressives</li>
+                                    <li>• Often multiple fixed jackpot levels</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Jackpots -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-3d">Types of Jackpot Slots</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="jackpot-type-card">
+                        <div class="text-4xl text-electric-blue mb-4">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Network Progressive</h3>
+                        <p class="text-gray-300 text-sm">Linked across multiple casinos for massive prizes</p>
+                    </div>
+                    <div class="jackpot-type-card">
+                        <div class="text-4xl text-neon-pink mb-4">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Local Progressive</h3>
+                        <p class="text-gray-300 text-sm">Casino-specific jackpots with regular payouts</p>
+                    </div>
+                    <div class="jackpot-type-card">
+                        <div class="text-4xl text-yellow-400 mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Must Drop</h3>
+                        <p class="text-gray-300 text-sm">Guaranteed to pay out by a certain time or amount</p>
+                    </div>
+                    <div class="jackpot-type-card">
+                        <div class="text-4xl text-green-400 mb-4">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Fixed Jackpot</h3>
+                        <p class="text-gray-300 text-sm">Set prize amounts with consistent payouts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jackpot Providers -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-3d">Top Jackpot Providers</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="provider-info-card">
+                        <h3 class="text-2xl font-bold mb-4 text-electric-blue">Microgaming</h3>
+                        <p class="text-gray-300 mb-4">Home to the legendary Mega Moolah network, Microgaming has paid out over £1 billion in progressive jackpots.</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Famous Games:</span>
+                                <span class="text-electric-blue">Mega Moolah, Major Millions</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Record Win:</span>
+                                <span class="text-green-400">£17.2 Million</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-info-card">
+                        <h3 class="text-2xl font-bold mb-4 text-neon-pink">NetEnt</h3>
+                        <p class="text-gray-300 mb-4">Known for innovative jackpot mechanics and stunning visuals, NetEnt delivers premium jackpot experiences.</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Famous Games:</span>
+                                <span class="text-neon-pink">Mega Fortune, Hall of Gods</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Record Win:</span>
+                                <span class="text-green-400">£15.3 Million</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-info-card">
+                        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Playtech</h3>
+                        <p class="text-gray-300 mb-4">Features the Age of the Gods series and DC Super Heroes jackpots with multiple progressive levels.</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Famous Games:</span>
+                                <span class="text-yellow-400">Age of Gods, Beach Life</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Record Win:</span>
+                                <span class="text-green-400">£12.8 Million</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jackpot Games -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8 text-3d">Featured Jackpot Games</h2>
+            
+            <!-- Game Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+                <div class="game-card">
+                    <img src="slots/le-king.jpg" alt="Le King" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Le King</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£2.8M Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="slots/fireworks-of-fortune.jpg" alt="Fireworks of Fortune" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Fireworks of Fortune</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£456K Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="slots/snoop-dogg-dollars.jpg" alt="Snoop Dogg Dollars" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Snoop Dogg Dollars</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£89K Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="slots/tomb-of-gold-2.jpg" alt="Tomb of Gold 2" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Tomb of Gold 2</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£234K Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="slots/wanted-dead-or-wild.jpg" alt="Wanted Dead or a Wild" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Wanted Dead or a Wild</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£1.2M Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="slots/ze-zeus.jpg" alt="Ze Zeus" class="w-full aspect-[2/3] object-cover rounded-xl">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Ze Zeus</h3>
+                        <div class="text-sm text-yellow-400 mb-2">£678K Jackpot</div>
+                        <button class="play-btn" onclick="window.location.href='/register'">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jackpot Tips -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-3d">Jackpot Winning Tips</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-coins text-electric-blue text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Bet Maximum Lines</h3>
+                                    <p class="text-gray-300">Many progressive jackpots require maximum paylines to be eligible. Always check the game rules.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-line text-neon-pink text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Choose High Jackpots</h3>
+                                    <p class="text-gray-300">Target jackpots that haven't been won recently and have grown to substantial amounts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-yellow-400 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Play Must Drop Jackpots</h3>
+                                    <p class="text-gray-300">Focus on "must drop by" jackpots when they're close to their deadline for better odds.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-piggy-bank text-green-400 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Manage Your Bankroll</h3>
+                                    <p class="text-gray-300">Set a budget specifically for jackpot games and never chase losses with money you can't afford.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-info-circle text-purple-400 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Understand the Rules</h3>
+                                    <p class="text-gray-300">Each jackpot game has different trigger conditions. Read the paytable and rules carefully.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip-card">
+                            <div class="flex items-start">
+                                <i class="fas fa-random text-orange-400 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Remember It's Random</h3>
+                                    <p class="text-gray-300">Jackpots are completely random. Previous spins don't affect future outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Homepage -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-300 mb-6">Ready to chase your jackpot dreams?</p>
+                <a href="/" class="cta-button-primary">
+                    <i class="fas fa-home mr-2"></i>
+                    Back to CipherWins
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 py-12 border-t border-purple-500/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.png" class="h-16" alt="cipher wins logo" />
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/faq" class="hover:text-electric-blue">FAQ</a></li>
+                        <li><a href="/withdrawals" class="hover:text-electric-blue">Withdrawals</a></li>
+                        <li><a href="/jackpots" class="hover:text-electric-blue">Jackpots</a></li>
+                        <li><a href="/bonus-wagering" class="hover:text-electric-blue">Wagering</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Responsible Gaming</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-electric-blue">Help hub</a></li>
+                        <li><i class="fas fa-shield-alt mr-2"></i>GamStop</li>
+                        <li><i class="fas fa-heart mr-2"></i>GambleAware</li>
+                        <li><i class="fas fa-clock mr-2"></i>BeGambleAware</li>
+                        <li><i class="fas fa-user-shield mr-2"></i>18+ Only</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i>support@cipherwins.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+44 20 7946 0958</li>
+                        <li><i class="fas fa-comments mr-2"></i>24/7 Live Chat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-500/30 pt-8 text-center text-sm text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Gambling can be addictive. Play responsibly. 18+
+                </p>
+                <p>CipherWins [UK]. Online casino. Licensed by Anjouan Gaming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Jackpot counter animation
+        function animateJackpot(elementId, targetAmount) {
+            const element = document.getElementById(elementId);
+            const current = parseInt(element.textContent.replace(/[£,]/g, ''));
+            const increment = Math.floor(Math.random() * 100) + 50;
+            const newAmount = current + increment;
+            
+            element.textContent = `£${newAmount.toLocaleString()}`;
+        }
+        
+        // Update jackpots every 10 seconds
+        setInterval(() => {
+            animateJackpot('mega-jackpot', 2847392);
+            animateJackpot('major-jackpot', 456789);
+            animateJackpot('mini-jackpot', 89234);
+        }, 10000);
+    </script>
+</body>
+</html>
